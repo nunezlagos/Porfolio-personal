@@ -1,0 +1,328 @@
+
+/*Estilos GENERALES*/
+body  {
+    font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+    padding-top: 7%;
+    background-color: #0f172a;
+    padding-left: 9%; 
+    padding-right: 9%;
+    
+}
+
+a { 
+    color: #e2e8f0; 
+    text-decoration: none;
+}
+
+li {
+  padding-top: 12px; 
+}
+
+h1{ color:#e2e8f0;
+  font-weight: bold;}
+
+h2{ font-size: 16px;
+    color:#e2e8f0;;}
+h4{color:#cbd5e1;}
+p{  font-size: 14px;    
+  color:#a5b6cd;
+  padding-top: 18px;
+  padding-bottom: 18px;}
+
+  
+/*Inicio Header lateral*/
+#header {
+    position: fixed;
+    width: 39%; /* Ocupa el 40% de la pantalla */
+    height: 100vh; /* Establece la altura al 100% de la ventana */
+    background-color: #0f172a;
+    padding: 0px;
+}
+
+.divSlogan{
+  padding-right: 126px;
+}
+.divIcoLink {
+  padding-top: 200px;
+}
+svg {
+  color: #eff3f2; /* Cambia el color del icono a rojo */
+}
+.iniIcoPad{
+  margin-right: 25px; 
+  margin-left:38px;
+}
+.icoPad{
+  margin-right: 25px;
+}
+    /*Inicio Animacion de menu*/
+    .section {
+      margin-left: 47.5%; /* Elimina completamente el margen izquierdo */
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Alinea al principio de la columna */
+      align-items: center;
+      padding: 0;
+      }
+    /* Estilo para el enlace */
+    .mi-enlace {
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+    }
+    /* Estilo para el contenedor del título */
+    .mi-titulo {
+      display: inline-block;
+      position: relative;
+    }
+    /* Estilo para la línea horizontal */
+    .mi-linea {
+      width: 20px; /* Ancho inicial de la línea */
+      height: 4px; /* Altura de la línea (ajusta según tu preferencia) */
+      background-color: #fdfcfc; /* Color de fondo de la línea */
+      transition: width 0.3s ease; /* Animación del ancho de la línea */
+      transform-origin: left center; /* Escala desde la izquierda */
+      transform: scaleX(1); /* Ancho inicial de la línea (oculta la línea inicialmente) */
+      position: absolute;
+      top: 50%; /* Coloca la línea en el centro verticalmente */
+      left: 0;
+      z-index: 1; /* Asegura que la línea esté en el frente del contenido */
+    }
+    /* Estilo para el texto */
+    .mi-texto {
+      color: #f6f6f6;
+      margin: 0;
+      display: inline-block;
+      position: relative;
+      white-space: nowrap; /* Evita que las palabras se rompan */
+      margin-left: 30px; /* Margen izquierdo para separar el texto de la línea */
+      transform: translateX(0); /* Inicialmente, el texto está en su posición original */
+      transition: transform 0.3s ease; /* Animación del desplazamiento del texto */
+      width: 200px; 
+    }
+    /* Animación de aparición de la línea y el desplazamiento del texto */
+    .mi-enlace:hover .mi-linea {
+      width: 50px; /* Ancho final de la línea */
+      transform: scaleX(1); /* Escala al 100% al pasar el mouse */
+    }
+    .mi-enlace:hover .mi-texto {
+      transform: translateX(40px); /* Desplaza el texto hacia la derecha al pasar el mouse */
+    }
+    /* Estilo para el texto activo */
+    .mi-enlace.activo .mi-linea {
+      width: 50px; /* Ancho final de la línea */
+      transform: scaleX(1); /* Escala al 100% cuando está activo */
+    }
+    .mi-enlace.activo .mi-texto {
+      transform: translateX(40px); /* Desplaza el texto hacia la derecha cuando está activo */
+    }
+    /*Fninal  Animacion de menu*/
+/*Final Header lateral*/
+
+
+#header2 {
+    position: fixed;
+    background-color: #0f172a;
+}
+
+
+.divSection1{
+  color: #e2e8f0; 
+  width: 100%; 
+  text-align: center;
+
+  
+}
+
+.icoTegnologias{
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.divSection2{
+  color: #e2e8f0; 
+  width: 100%; 
+  text-align: center;
+  
+
+}
+.divSection3{
+  color: #e2e8f0; 
+  width: 100%; 
+  text-align: center;
+
+
+}
+
+.divProyectos{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.divSection4{
+  color: #e2e8f0; 
+  width: 100%; 
+  text-align: center;
+
+}
+
+
+
+
+
+
+/* Estilos para pantallas más grandes (no móviles) */
+
+
+/* Estilos para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+  /* Ocultar el header en dispositivos móviles */
+  #header {
+      display: none;
+  }
+
+  /* Estilo para el menú de dispositivos móviles */
+  #header2 {
+      position: fixed;
+      background-color: #0f172a;
+      width: 100%;
+      top: 0;
+      left: 0;
+      
+  }
+
+  .hamburger, .cross {
+    background: none;
+    position: fixed;
+    top: 0;
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Centra horizontalmente */
+    line-height: 40px;
+    color: #f1ebeb;
+    border: 0;
+    font-size: 1.4em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+    background: #030303;
+    width: 100%;
+    height: 40px;
+    padding: 0; /* Elimina el espacio vertical */
+}
+
+.cross {
+   font-size: 1.4em;
+    
+    height: 40px;
+}
+
+.menu2 {
+  padding: 0;
+    z-index: 100000;
+    font-weight: bold;
+    font-size: 0.8em;
+    width: 100%;
+    background: #f1f1f1;
+    position: fixed;
+    text-align: center;
+    font-size: 12px;
+    left: 0;
+    top: 40px; /* Ajusta la posición vertical del menú */
+    margin-top: 0; /* Elimina el espacio vertical */
+}
+
+.menu2 ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.menu2 li {
+    display: block;
+    padding: 15px 0;
+    border-bottom: #dddddd 1px solid;
+}
+
+.menu2 li:hover {
+    background: #ffffff;
+    border-bottom: #dddddd 1px solid;
+}
+
+.menu2 ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.menu2 ul li a:hover {
+    color: #666;
+}
+
+.menu2 a {
+    text-decoration: none;
+    color: #666;
+}
+
+.menu2 a:hover {
+    color: #0e0d0d;
+    background: #f1f1f1;
+}
+
+.glyphicon-home {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+.menu2 {
+  display: none;
+  /* Agrega otros estilos según tus preferencias para la versión no responsive */
+}
+
+  
+
+  .section {
+    margin-left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+
+}
+
+/* Estilos para el elemento en no responsive (visible por defecto) */
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media (max-width: 768px) {
+  .menu2 {
+    display: NONE; /* Oculta el menú en dispositivos móviles */
+  }
+  .buttons {
+    display: block; /* Muestra los botones en dispositivos móviles */
+  }
+}
+
+/* Estilos para pantallas más grandes (ancho mínimo de 769px) */
+@media (min-width: 769px) {
+  .menu2 {
+    display: block; /* Muestra el menú en pantallas más grandes */
+  }
+  .buttons {
+    display: none; /* Oculta los botones en pantallas más grandes */
+  }
+/* ... (tus estilos existentes para el menú desplegable) */
+}
+
+
+
