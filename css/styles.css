@@ -168,14 +168,6 @@ svg {
 
 }
 
-
-
-
-
-
-/* Estilos para pantallas más grandes (no móviles) */
-
-
 /* Estilos para pantallas más pequeñas (móviles) */
 @media (max-width: 768px) {
   /* Ocultar el header en dispositivos móviles */
@@ -215,7 +207,6 @@ svg {
 
 .cross {
    font-size: 1.4em;
-    
     height: 40px;
 }
 
@@ -301,7 +292,6 @@ svg {
 
 }
 
-/* Estilos para el elemento en no responsive (visible por defecto) */
 
 /* Estilos para dispositivos móviles (ancho máximo de 768px) */
 @media (max-width: 768px) {
